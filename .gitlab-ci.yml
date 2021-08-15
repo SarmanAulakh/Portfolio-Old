@@ -9,11 +9,12 @@ deploy-functions:
         - cd functions
         - npm install
         - cd ..
-        - firebase deploy --only functions --token $FIREBASE_TOKEN
+        - firebase deploy --token $FIREBASE_TOKEN --project portfolio-c0519 --only functions 
     only:
         refs:
             - master
         changes:
+            - merge_requests
             - functions/**/*
 
 deploy-hosting:
@@ -22,9 +23,10 @@ deploy-hosting:
         - cd front-end
         - npm install
         - npm run build
-        - firebase deploy --only hosting --token $FIREBASE_TOKEN
+        - firebase deploy --token $FIREBASE_TOKEN --project portfolio-c0519 --only hosting
     only:
         refs:
             - master
         changes:
+            - merge_requests
             - front-end/**
