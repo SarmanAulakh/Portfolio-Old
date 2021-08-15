@@ -21,7 +21,8 @@ body a{
 }
 
 body p,
-body li
+body li,
+body a
 {
   margin: 0;
   font-family: var(--main-txt);
