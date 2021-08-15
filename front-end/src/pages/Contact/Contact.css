@@ -1,0 +1,35 @@
+.contact-input{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0px;
+}
+.contact-input textarea{
+  resize: "none";
+  overflow-y: "auto";
+  width: 70%;
+}
+
+.contact-input input{
+  width: 70%;
+}
+
+.contact-container{
+  font-size: 18px;
+  font-weight: bold;
+  background-color: var(--light-blue);
+  padding: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.294);
+  width: 70%;
+}
+
+section.contact-container h3{
+  color: var(--white);
+}
+
+@media (max-width: 1200px) {
+  .contact-container{
+    width: 100%;
+  }
+}

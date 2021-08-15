@@ -1,0 +1,53 @@
+.App {
+  background-color: var(--off-white);
+  height: 100vh;
+  font-size: 16px;
+  color: var(--dark-blue);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.page-wrap{
+  position: relative;
+  padding: 50px;
+  background-color: var(--light-grey);
+  height: calc(100vh - 140px);
+  overflow: auto;
+}
+
+.page-wrap h2{
+  margin: 0px;
+}
+
+.title{
+  padding: 0;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.highlight{
+  background-color: none;
+}
+
+.align-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.align-row{
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 450px){
+  .page-wrap{
+    padding: 25px;
+  }
+}

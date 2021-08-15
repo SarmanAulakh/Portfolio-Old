@@ -1,0 +1,101 @@
+.experience-section {
+  max-width: max-content;
+  background-color: var(--white);
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.294);
+  padding: 10px;
+}
+
+#about .experience-section p {
+  padding: 5px 0px;
+}
+
+.experience-card {
+  padding: 20px;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.experience-section .experience-card:last-child{
+  border-bottom: none;
+}
+
+.experience-section img,
+.experience-section .img 
+{
+  height: 56px;
+  width: 56px;
+  max-width: 100%;
+  max-height: 100%;
+  margin-right: 20px;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 40px;
+  text-align: center;
+}
+
+.experience-section .img p{
+  margin-top: 5px;
+}
+
+.experience-section ul {
+  margin-left: 76px;
+}
+
+.experience-head {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.certificates-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 0;
+}
+
+.certificate{
+  border: 1px solid var(--light-blue);
+}
+.certificate img{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: calc(100% - 40px);  
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.certificate a{
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: var(--white);
+  border: 1px solid var(--light-blue);
+  padding: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.294);
+  cursor: pointer;
+  display: block;
+}
+
+li {
+  line-height: 150%;
+}
+
+@media (max-width: 600px) {
+  .experience-section ul {
+    margin-left: 0px;
+  }
+  #about.page-wrap{
+    padding: 0;
+  }
+  .experience-card {
+    padding: 5px;
+  }
+  .experience-head {
+    margin-left: 0px;
+  }
+}
