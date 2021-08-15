@@ -29,4 +29,4 @@ deploy-hosting:
             - master
         changes:
             - merge_requests
-            - front-end/**
+            - front-end/**/*
