@@ -4,7 +4,7 @@ before_script:
   - npm i -g firebase-tools
 
 deploy-functions:
-    stage: deploy-functions
+    stage: deploy
     script:
         - cd functions
         - npm install
@@ -17,7 +17,7 @@ deploy-functions:
             - functions/**/*
 
 deploy-hosting:
-    stage: deploy-frontend
+    stage: deploy
     script:
         - cd front-end
         - npm install
