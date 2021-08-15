@@ -95,7 +95,6 @@ export default class Home extends Component {
                 narrative: data.narrative,
               }}
               certificates={certificates}
-              toContact={() => this.setState({ sidePage: 'contact' })}
             />)
           break;
         case 'contact':
@@ -105,6 +104,7 @@ export default class Home extends Component {
           page = (
             <Portfolio
               data={data.projects}
+              categories={data.categories}
               toContact={() => this.setState({ sidePage: 'contact' })}
             />)
       }

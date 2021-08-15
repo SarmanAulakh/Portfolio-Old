@@ -24,6 +24,14 @@ router.get('/', (req, res) => {
     .then(snapshot => {
       let data = snapshot.val()
       data.experience.reverse()
+
+      // get set of unique categories
+      let categories = new Set()  
+      data.projects.forEach((proj, i) => {
+        categories.add(proj.category)
+        proj.id = i                     //add unique id
+      })
+      data.categories = Array.from(categories)
       res.send(data)
     })
     .catch((error) => {

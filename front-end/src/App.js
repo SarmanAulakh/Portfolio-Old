@@ -10,7 +10,7 @@ import { Home } from "./pages";
 
 import "./App.css";
 
-axios.defaults.baseURL = 'https://us-central1-portfolio-c0519.cloudfunctions.net/api'
+axios.defaults.baseURL = 'http://localhost:5001/portfolio-c0519/us-central1/api/'
 
 export default function App() {
   let [loading, setLoading] = useState(true)

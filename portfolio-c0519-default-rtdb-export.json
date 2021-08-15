@@ -68,9 +68,89 @@
   "narrative": "Having excellent communication skills is something I strive for, especially when in comes to dealing with non-technical teams. I've been developing my skills as a leader, presenter, and a teammate through varies experiences and along the way, I realized that staying organized and positive are my secrets to success.",
   "projects": [
     {
+      "title": "Space Invaders (High Performance)",
+      "url": "https://media.giphy.com/media/TezCsgVUgyJhfobaoz/giphy.gif",
+      "link": "https://replit.com/@SarmanAulakh/invaders",
+      "description": "Built a high performance Space Invaders game",
+      "tags": "Rust",
+      "category": "Mini Games",
+      "startDate": "2021-07-01"
+    },
+    {
+      "title": "Game of Life (High Performance)",
+      "url": "https://media.giphy.com/media/nn0eunzTYiItWKgU33/giphy.gif",
+      "link": "https://replit.com/@SarmanAulakh/Game-of-Life-rustwasm#README.md",
+      "description": "Built a high performance version of the popular Game of Life",
+      "tags": "Rust, Web Assembly, Wasm",
+      "category": "Mini Games",
+      "startDate": "2021-07-05"
+    },
+    {
+      "title": "Market Crash",
+      "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-c0519.appspot.com/o/project_images%2FMarketCrash.JPG?alt=media&token=e784f328-cb80-4980-8b2c-674063e7ad05",
+      "link": "https://tenko.ca/",
+      "description": "Built a stock portfolio comparision website",
+      "tags": "React, Node.js, Firebase",
+      "category": "Personal Projects",
+      "startDate": "2021-01-01"
+    },
+    {
+      "title": "Flight Club",
+      "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-c0519.appspot.com/o/project_images%2FFlightClub.JPG?alt=media&token=b00a842d-3736-470c-b2da-955149339c69",
+      "link": "https://replit.com/@SarmanAulakh/FlightClub",
+      "description": "Automated script that searches for specific live flight prices and matches them to predefined data in google sheets. Cheap flight details meeting the user's criteria are emailed to them",
+      "tags": "Python, Automation, Scripting",
+      "category": "Personal Projects",
+      "startDate": "2021-08-01"
+    },
+    {
+      "title": "Snake Game",
+      "url": "https://media.giphy.com/media/0i0UBwJT2hWpQ8cCV0/giphy.gif",
+      "link": "https://replit.com/@SarmanAulakh/SnakeGame",
+      "description": "The classic snake game implemeted using Python and Turtle for graphics",
+      "tags": "Python",
+      "category": "Mini Games",
+      "startDate": "2021-06-01"
+    },
+    {
+      "title": "Pong Game",
+      "url": "https://media.giphy.com/media/i5LzjvKdHJ7fcEQvRs/giphy.gif",
+      "link": "https://replit.com/@SarmanAulakh/PongGame",
+      "description": "The classic pong game implemeted using Python and Turtle for graphics",
+      "tags": "Python",
+      "category": "Mini Games",
+      "startDate": "2021-06-02"
+    },
+    {
+      "title": "ImpactFrenzy",
+      "category": "Mini Games",
+      "description": "HTML5 game built using the Phaser Framework for Canvas and WebGL powered browser games. Authenticate to play an infinite game that gets harder as your score goes up. Collect coins while avoiding the bouncing spikes!",
+      "link": "https://replit.com/@SarmanAulakh/ImpactFrenzy-Phasor",
+      "startDate": "2019-09-01",
+      "tags": "JavaScript, Phaser Framework",
+      "url": "https://media.giphy.com/media/wbB2LZHvdCzHRyBYXL/giphy.gif"
+    },
+    {
+      "title": "Flask Templating w/ Jinja",
+      "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-c0519.appspot.com/o/project_images%2FFlask%20Templating.JPG?alt=media&token=8a657a64-3e6f-438f-ac05-a3f16881132e",
+      "link": "https://replit.com/@SarmanAulakh/Flask-Templating-with-Jinja",
+      "description": "Small project to learn about Flask and Jinja templating",
+      "tags": "Python",
+      "category": "Mini Projects",
+      "startDate": "2021-06-04"
+    },
+    {
+      "title": "Werewolf",
+      "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-c0519.appspot.com/o/project_images%2Fkenna_werewolf.JPG?alt=media&token=1a821927-981c-4799-a502-d072e429bffa",
+      "link": "",
+      "description": "Online multiplayer game of werewolf (also known as Mafia). Build chat rooms with websockets, where each user is given a role and their camera turns on at the appropriate time",
+      "tags": "React, Node.js, Websockets",
+      "category": "Personal Projects",
+      "startDate": "2020-08-01"
+    },
+    {
       "category": "Group Projects",
       "description": "SM-Toolkit was built to help students with basic math operations such as matrix manipulations, conversions, and more. The idea was to practice math and programming fundamentals while trying to build a symbolab/wolfram alpha type website",
-      "id": 1,
       "link": "https://github.com/Sarman5432/SM-Toolkit",
       "startDate": "2020-08-01",
       "tags": "JavaScript, HTML/CSS, jQuery",
@@ -78,64 +158,13 @@
       "url": "https://i.ibb.co/wscHn18/SM-Toolkit.jpg"
     },
     {
-      "category": "Personal Projects",
-      "description": "HTML5 game built using the Phaser Framework for Canvas and WebGL powered browser games. Authenticate to play an infinite game that gets harder as your score goes up. Collect coins while avoiding the bouncing spikes!",
-      "id": 2,
-      "link": "https://github.com/Sarman5432/ImpactFrenzy",
-      "startDate": "2019-09-01",
-      "tags": "JavaScript, Phaser Framework",
-      "title": "ImpactFrenzy",
-      "url": "https://i.ibb.co/prrFdyn/Game-proj.png"
-    },
-    {
-      "id": 3,
-      "title": "Space Invaders (High Performance)",
-      "url": "https://media.giphy.com/media/TezCsgVUgyJhfobaoz/giphy.gif",
-      "link": "https://replit.com/@SarmanAulakh/invaders",
-      "description": "Built a high performance Space Invaders game",
-      "tags": "Rust",
-      "category": "Personal Project",
-      "startDate": "2021-07-01"
-    },
-    {
-      "id": 4,
-      "title": "Game of Life (High Performance)",
-      "url": "https://media.giphy.com/media/TezCsgVUgyJhfobaoz/giphy.gif",
-      "link": "https://replit.com/@SarmanAulakh/invaders",
-      "description": "Built a high performance version of the popular Game of Life",
-      "tags": "Rust, Web Assembly, Wasm",
-      "category": "Personal Project",
-      "startDate": "2021-07-05"
-    },
-    {
-      "id": 5,
-      "title": "Market Crash",
-      "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-c0519.appspot.com/o/project_images%2FMarketCrash.JPG?alt=media&token=e784f328-cb80-4980-8b2c-674063e7ad05",
-      "link": "https://tenko.ca/",
-      "description": "Built a stock portfolio comparision website",
-      "tags": "React, Node.js, Firebase",
-      "category": "Personal Project",
-      "startDate": "2021-01-01"
-    },
-    {
-      "id": 5,
-      "title": "Werewolf",
-      "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-c0519.appspot.com/o/project_images%2Fkenna_werewolf.JPG?alt=media&token=1a821927-981c-4799-a502-d072e429bffa",
-      "link": "",
-      "description": "Online multiplayer game of werewolf (also known as Mafia). Build chat rooms with websockets, where each user is given a role and their camera turns on at the appropriate time",
-      "tags": "React, Node.js, Websockets",
-      "category": "Personal Project",
-      "startDate": "2020-08-01"
-    },
-    {
-      "id": 6,
-      "title": "Flight Club",
-      "url": "",
-      "link": "",
-      "description": "Automated script that searches for specific live flight prices and matches them to predefined data in google sheets. Cheap flight details meeting the user's criteria are emailed to them",
-      "tags": "Python, Automation, Scripting",
-      "category": "Personal Project",
-      "startDate": "2021-08-01"
+      "title": "Bouncy Balls",
+      "link": "https://replit.com/@SarmanAulakh/BouncyBallGame",
+      "description" : "Canavs animations made with Vanilla Javascript to show the use of class based structures",
+      "tags": "Vanilla Javascript",
+      "category": "Mini Games",
+      "url": "https://media.giphy.com/media/JPpoIWJOXWtn2lwy3I/giphy.gif",
+      "startDate": "2019-08-01"
     }
   ],
   "years_of_experience": "1 Year, 4 Months"

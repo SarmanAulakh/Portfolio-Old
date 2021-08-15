@@ -1,7 +1,7 @@
 import React from 'react'
 import './About.css'
 
-function About({ data, toContact }) {
+function About({ data }) {
   const {
     experience,
     narrative,
