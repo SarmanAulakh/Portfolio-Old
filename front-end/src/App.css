@@ -46,6 +46,12 @@
   align-items: center;
 }
 
+@media (max-width: 980px) {
+  .page-wrap {
+    height: calc(100vh - 100px);
+  }
+}
+
 @media (max-width: 450px){
   .page-wrap{
     padding: 25px;
