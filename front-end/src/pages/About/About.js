@@ -74,7 +74,7 @@ function About({ data, toContact }) {
           {certificates.map(certificate => {
             return (
               <div className="certificate">
-                <img src={certificate.url} />
+                <img src={certificate.url} alt=""/>
                 <a href={certificate.url} target="_blank" alt="" rel="noopener noreferrer">{certificate.name.split(".")[0]}</a>
               </div>
             )
