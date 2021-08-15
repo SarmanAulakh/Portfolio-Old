@@ -9,7 +9,7 @@ deploy-functions:
         - cd functions
         - npm install
         - cd ..
-        - firebase deploy --only functions --token $FIREBASE_TOKEN
+        - firebase deploy --token $FIREBASE_TOKEN --only functions 
     only:
         refs:
             - master
@@ -22,7 +22,7 @@ deploy-hosting:
         - cd front-end
         - npm install
         - npm run build
-        - firebase deploy --only hosting --token $FIREBASE_TOKEN
+        - firebase deploy --token $FIREBASE_TOKEN --only hosting
     only:
         refs:
             - master
