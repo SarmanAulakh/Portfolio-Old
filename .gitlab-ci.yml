@@ -14,6 +14,7 @@ deploy-functions:
         refs:
             - master
         changes:
+            - merge_requests
             - functions/**/*
 
 deploy-hosting:
@@ -27,4 +28,5 @@ deploy-hosting:
         refs:
             - master
         changes:
+            - merge_requests
             - front-end/**
