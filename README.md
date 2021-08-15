@@ -1,6 +1,12 @@
 # Portfolio
 
+## Pipelines setup Firebase
+https://about.gitlab.com/blog/2020/03/16/gitlab-ci-cd-with-firebase/
 
+    $ firebase login:ci
+
+Copy and paste token into GitLab: go to Settings -> CI/CD -> Variables.
+The key is FIREBASE_TOKEN and then the value is the token that was printed to your terminal.
 
 ## Getting started
 

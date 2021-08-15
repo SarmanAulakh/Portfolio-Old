@@ -39,9 +39,11 @@ export default class FilterBar extends Component {
   };
 
   render() {
+    console.log("props", this.props.filters)
+    console.log("state", this.state.filters)
     return (
       <div className="filter-bar">
-        {this.props.filters.map((filter, index) => {
+        {this.state.filters.map((filter, index) => {
           if (filter.type === "text") {
             return (
               <input

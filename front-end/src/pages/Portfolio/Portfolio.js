@@ -8,11 +8,35 @@ export default class Portfolio extends Component {
     this.state = {
       portfolioData: [],
       filteredData: [],
+      filters: [
+        { id: "Search", type: "text", value: "", placeholder: "Search" },
+        {
+          id: "Category",
+          type: "dropdown",
+          dropdown: [],
+          value: "",
+          placeholder: "Category",
+        },
+        {
+          id: "Sort",
+          type: "dropdown",
+          dropdown: ["Ascending A-Z", "Descending Z-A", "New", "Old"],
+          value: "",
+          placeholder: "Sort By",
+        },
+      ]
     };
   }
 
+
   componentDidMount() {
-    this.setState({ portfolioData: this.props.data, filteredData: this.props.data })
+    const new_filters = {...this.state.filters}
+    new_filters[1].dropdown = this.props.categories
+    this.setState({ 
+      portfolioData: this.props.data, 
+      filteredData: this.props.data,
+      filters: new_filters
+    })
   }
 
   updateData = (filters) => {
@@ -123,6 +147,8 @@ export default class Portfolio extends Component {
   };
 
   render() {
+    const filters = this.state.filters
+    console.log("port", filters)
     return (
       <div id="portfolio" className="page-wrap">
         <section>
@@ -153,26 +179,3 @@ export default class Portfolio extends Component {
     );
   }
 }
-
-const filters = [
-  { id: "Search", type: "text", value: "", placeholder: "Search" },
-  {
-    id: "Category",
-    type: "dropdown",
-    dropdown: [
-      "Personal Projects",
-      "Group Projects",
-      "Work Experience",
-      "Hackathons",
-    ],
-    value: "",
-    placeholder: "Category",
-  },
-  {
-    id: "Sort",
-    type: "dropdown",
-    dropdown: ["Ascending A-Z", "Descending Z-A", "New", "Old"],
-    value: "",
-    placeholder: "Sort By",
-  },
-];
