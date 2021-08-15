@@ -1,6 +1,6 @@
 {
   "name": "portfolio-functions",
-  "author": "sarman",
+  "author": "sarman aulakh",
   "description": "Cloud Functions for Firebase",
   "scripts": {
     "serve": "firebase emulators:start --only functions",
