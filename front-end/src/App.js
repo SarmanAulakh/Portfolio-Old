@@ -17,27 +17,30 @@ export default function App() {
   let [json, setJson] = useState("")
   let [certificates, setCertificates] = useState()
 
-  useEffect(async () => {
-    let success = true
-    await axios.get("/")
-      .then((res) => {
-        setJson(res.data)
-      })
-      .catch((err) => {
-        success = false
-        console.log(err)
-      });
+  useEffect(() => {
+    async function fetchData() {
+      let success = true
+      await axios.get("/")
+        .then((res) => {
+          setJson(res.data)
+        })
+        .catch((err) => {
+          success = false
+          console.log(err)
+        });
 
-    await axios.get("/certificates")
-      .then(res => setCertificates(res.data))
-      .catch((err) => {
-        success = false
-        console.log(err)
-      });
+      await axios.get("/certificates")
+        .then(res => setCertificates(res.data))
+        .catch((err) => {
+          success = false
+          console.log(err)
+        });
 
-    if(success){
-      setLoading(false)
+        if (success) {
+          setLoading(false)
+        }
     }
+    fetchData()
   }, [])
 
   return (
