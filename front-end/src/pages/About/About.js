@@ -1,5 +1,4 @@
 import React from 'react'
-import { Button } from '../../components';
 import './About.css'
 
 function About({ data, toContact }) {
@@ -30,7 +29,7 @@ function About({ data, toContact }) {
             return (
               <div className="experience-card">
                 <div className="experience-head">
-                  <img src={exp.imgUrl}></img>
+                  <img src={exp.imgUrl} alt=""></img>
                   <div>
                     <h2>{exp.role}</h2>
                     <p><b>{exp.company}</b> | {exp.duration}</p>
@@ -49,7 +48,7 @@ function About({ data, toContact }) {
         <div className='experience-section'>
           <div className="experience-card">
             <div className="experience-head">
-              <img src={university.imgUrl}></img>
+              <img src={university.imgUrl} alt=""></img>
               <div>
                 <p><span className='bold'>{university.degree}</span></p>
                 <p>{university.name} | {university.duration}</p>
@@ -76,7 +75,7 @@ function About({ data, toContact }) {
             return (
               <div className="certificate">
                 <img src={certificate.url} />
-                <a href={certificate.url} target="_blank">{certificate.name.split(".")[0]}</a>
+                <a href={certificate.url} target="_blank" alt="" rel="noopener noreferrer">{certificate.name.split(".")[0]}</a>
               </div>
             )
           })}
