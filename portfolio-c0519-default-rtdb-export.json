@@ -1,0 +1,142 @@
+{
+  "education": {
+    "highschool": {
+      "degree": "High School Diploma, OSSD",
+      "description": "Completed highschool as a honour roll student with an average of ~95%",
+      "duration": "Sept 2015 – May 2019",
+      "name": "Mississauga Secondary School"
+    },
+    "university": {
+      "degree": "Computer Engineering, BASc",
+      "description": "Finished first year Computer Engineering (co-op) and going into second year",
+      "duration": "Sept 2019 - April 2020",
+      "name": "University of Waterloo",
+      "urlImage" : "https://media-exp1.licdn.com/dms/image/C560BAQFI41Ly6leq7Q/company-logo_100_100/0/1519896484763?e=1637193600&v=beta&t=8YDA-kVJtE7z5jlrefAUYyPvkNW5iTh4G6YZeMrlogQ"
+    }
+  },
+  "experience": [
+    {
+      "company": "Atlas 365 Inc",
+      "duration": "May 2019 - Aug 2019",
+      "points": [
+        "Created a React & Node.js dashboard with Recharts for graphs and a process to track user clicks",
+        "Utilized the Ethereum network and C# to create in-app messenger and web games"
+      ],
+      "role": "Software Developer - Intern",
+      "imgUrl": "https://media-exp1.licdn.com/dms/image/C4E0BAQFSZCYtqnKhvQ/company-logo_100_100/0/1617123056530?e=1637193600&v=beta&t=YxgRWcGc2GrMCEFeKsmcULBgy5kmULyWnUvHyP9Vvko",
+      "primary": "JavaScript",
+      "secondary": "C#"
+    },
+    {
+      "company": "Kenna Technologies",
+      "duration": "Jan 2020 - Apr 2020",
+      "points": [
+        "Rebuilt an event management application used by over 50,000 users with React/Redux",
+        "Designed unit tests using Mocha/Chai and helped build a site that displays those errors externally"
+      ],
+      "role": "Application Developer - Intern",
+      "imgUrl": "https://media-exp1.licdn.com/dms/image/C4E0BAQEjGLoIwliplg/company-logo_100_100/0/1536770714251?e=1637193600&v=beta&t=I5vj594LVumatQlPewNwW8ntKVc13sg4iS42P8KPM2w",
+      "primary": "JavaScript",
+      "secondary": "C#"
+    },
+    {
+      "company": "Kenna Technologies",
+      "duration": "Sept 2020 - Dec 2020",
+      "points": [
+        "Moved 15+ Domino agents to a Node.js server calling SQL Procedures to reduce load on old servers",
+        "Improved image performance by 56% through client side image compression using Rust & Wasm"
+      ],
+      "role": "Application Developer - Intern",
+      "imgUrl": "https://media-exp1.licdn.com/dms/image/C4E0BAQEjGLoIwliplg/company-logo_100_100/0/1536770714251?e=1637193600&v=beta&t=I5vj594LVumatQlPewNwW8ntKVc13sg4iS42P8KPM2w",
+      "primary": "JavaScript",
+      "secondary": "C#"
+    },
+    {
+      "company": "OpenText",
+      "duration": "May 2021 - Aug 2021",
+      "points": [
+        "Built backend for user stories and fixed defects using Java, Spring Boot, and PostgreSQL",
+        "Leveraged Java and Jbehave/Rest Assured to create automated tests for a new public api",
+        "Designed new frontend components & features using React Hooks, Redux, Next.js and Sass"
+      ],
+      "role": "Software Developer - Intern",
+      "imgUrl": "https://media-exp1.licdn.com/dms/image/C4E0BAQHcqsO5Ur1b9Q/company-logo_200_200/0/1626119993641?e=1637193600&v=beta&t=UgzRW10yoT0q47uL2y0KpJ50YGNUltAD0r7ehtWODGU",
+      "primary": "JavaScript",
+      "secondary": "C#"
+    }
+  ],
+  "narrative": "Having excellent communication skills is something I strive for, especially when in comes to dealing with non-technical teams. I've been developing my skills as a leader, presenter, and a teammate through varies experiences and along the way, I realized that staying organized and positive are my secrets to success.",
+  "projects": [
+    {
+      "category": "Group Projects",
+      "description": "SM-Toolkit was built to help students with basic math operations such as matrix manipulations, conversions, and more. The idea was to practice math and programming fundamentals while trying to build a symbolab/wolfram alpha type website",
+      "id": 1,
+      "link": "https://github.com/Sarman5432/SM-Toolkit",
+      "startDate": "2020-08-01",
+      "tags": "JavaScript, HTML/CSS, jQuery",
+      "title": "SM-Toolkit",
+      "url": "https://i.ibb.co/wscHn18/SM-Toolkit.jpg"
+    },
+    {
+      "category": "Personal Projects",
+      "description": "HTML5 game built using the Phaser Framework for Canvas and WebGL powered browser games. Authenticate to play an infinite game that gets harder as your score goes up. Collect coins while avoiding the bouncing spikes!",
+      "id": 2,
+      "link": "https://github.com/Sarman5432/ImpactFrenzy",
+      "startDate": "2019-09-01",
+      "tags": "JavaScript, Phaser Framework",
+      "title": "ImpactFrenzy",
+      "url": "https://i.ibb.co/prrFdyn/Game-proj.png"
+    },
+    {
+      "id": 3,
+      "title": "Space Invaders (High Performance)",
+      "url": "https://media.giphy.com/media/TezCsgVUgyJhfobaoz/giphy.gif",
+      "link": "https://replit.com/@SarmanAulakh/invaders",
+      "description": "Built a high performance Space Invaders game",
+      "tags": "Rust",
+      "category": "Personal Project",
+      "startDate": "2021-07-01"
+    },
+    {
+      "id": 4,
+      "title": "Game of Life (High Performance)",
+      "url": "https://media.giphy.com/media/TezCsgVUgyJhfobaoz/giphy.gif",
+      "link": "https://replit.com/@SarmanAulakh/invaders",
+      "description": "Built a high performance version of the popular Game of Life",
+      "tags": "Rust, Web Assembly, Wasm",
+      "category": "Personal Project",
+      "startDate": "2021-07-05"
+    },
+    {
+      "id": 5,
+      "title": "Market Crash",
+      "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-c0519.appspot.com/o/project_images%2FMarketCrash.JPG?alt=media&token=e784f328-cb80-4980-8b2c-674063e7ad05",
+      "link": "https://tenko.ca/",
+      "description": "Built a stock portfolio comparision website",
+      "tags": "React, Node.js, Firebase",
+      "category": "Personal Project",
+      "startDate": "2021-01-01"
+    },
+    {
+      "id": 5,
+      "title": "Werewolf",
+      "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-c0519.appspot.com/o/project_images%2Fkenna_werewolf.JPG?alt=media&token=1a821927-981c-4799-a502-d072e429bffa",
+      "link": "",
+      "description": "Online multiplayer game of werewolf (also known as Mafia). Build chat rooms with websockets, where each user is given a role and their camera turns on at the appropriate time",
+      "tags": "React, Node.js, Websockets",
+      "category": "Personal Project",
+      "startDate": "2020-08-01"
+    },
+    {
+      "id": 6,
+      "title": "Flight Club",
+      "url": "",
+      "link": "",
+      "description": "Automated script that searches for specific live flight prices and matches them to predefined data in google sheets. Cheap flight details meeting the user's criteria are emailed to them",
+      "tags": "Python, Automation, Scripting",
+      "category": "Personal Project",
+      "startDate": "2021-08-01"
+    }
+  ],
+  "years_of_experience": "1 Year, 4 Months"
+}

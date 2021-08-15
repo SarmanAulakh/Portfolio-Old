@@ -1,0 +1,21 @@
+{
+  "short_name": "Sarman Aulakh",
+  "name": "Sarman Aulakh - Portfolio Website",
+  "description": "Personal Website for Sarman Aulakh (Sarmandeep Singh Aulakh) to showcase myself and all I've learned as a developer. Learn more about me, my projects, skills and experiences.",
+  "icons": [
+    {
+      "src": "/logo/s-icon-2.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/logo/s-icon-2.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],  
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

@@ -1,0 +1,138 @@
+#home{
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+  display: flex;
+}
+
+.left-col, .right-col{
+  height: 100%;
+  border: 1px solid white;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.left-col{
+  position: relative;
+  min-width: 450px;
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-col{
+  width: 65%;
+  position: relative;
+  background-color: var(--white);
+}
+
+.banner {
+  position: absolute;
+  bottom: 50px;
+  left: -2px;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  padding: 7px 20px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.294);
+  border-radius: 0px 5px 5px 0px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.right-menu{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  transform: translateY(-45%);
+}
+
+.right-col-item{
+  background-color: var(--white);
+  position: relative;
+  width: 100%;
+  height: 20%;
+  border: 1px solid white;
+  transform: skewY(-15deg);
+  font-size: 48px;
+  color: var(--dark-blue);
+  padding: 55px;
+}
+
+.right-col-item:hover{
+  cursor: pointer;
+  border: 5px solid white;
+}
+
+#main-links {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#main-text{
+  background-color: var(--light-grey);
+  font-size: 24px;
+  width: 350px;
+  border: 1px solid white;
+  font-weight: bold;
+  padding: 25px;
+}
+
+#main-text p{
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+
+#main-text h2{
+  font-size: 48px;
+  color:var(--light-blue);
+}
+
+@media (max-width: 980px){
+  #home{
+    flex-wrap: wrap;
+  }
+
+  .left-col{
+    width: 100%;
+    height: max-content;
+    margin: 30px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .right-col{
+    border: none;
+    width: 100% !important;
+    /* height: 30%; */
+  }
+
+  .right-col-item{
+    font-size: 24px;
+    padding: 10px;
+    transform: skewY(0deg);
+  }
+
+  .right-col-item:hover{
+    border: 4px solid white;
+  }
+
+  .banner{
+    display: none;
+  }
+}
+
+/** slim mobile **/
+@media (max-width: 450px){
+  #main-text{
+    width: calc(100% - 2px);
+  }
+  .left-col {
+    min-width: 300px;
+    margin: 5px;
+  }
+}

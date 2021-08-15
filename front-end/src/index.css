@@ -1,0 +1,43 @@
+:root {
+  --dark-blue: #112D4E;       /*rgb(17, 45, 78)*/
+  --light-blue: #3F72AF;      /*rgb(63, 114, 175)*/
+  --light-grey: #DBE2EF;      /*rgb(219, 226, 239)*/
+  --off-white: #F9F7F7;       /*rgb(249, 247, 247)*/
+  --white: #ffffff;
+
+  --main-txt: "Open Sans", sans-serif;
+  --title-txt: 'Nunito', serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body a{
+  text-decoration: none;
+}
+
+body p,
+body li
+{
+  margin: 0;
+  font-family: var(--main-txt);
+}
+
+body h1, 
+body h2, 
+body h3, 
+body h4 {
+  font-family: var(--title-txt);
+  color: var(--light-blue);
+}
+
+@media (max-width: 600px) {
+  .mobile-padding{
+    padding: 15px;
+  }
+}
+
