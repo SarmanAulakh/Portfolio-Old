@@ -23,7 +23,6 @@
 
 .right-col {
   width: 65%;
-  position: relative;
   background-color: var(--white);
 }
 
@@ -98,7 +97,7 @@
   .left-col {
     width: 100%;
     height: max-content;
-    margin: 30px;
+    margin: calc(30px + 40px) 30px 30px 30px;
     border: none;
     display: flex;
     align-items: center;
@@ -108,7 +107,7 @@
   .right-col {
     border: none;
     width: 100% !important;
-    /* height: 30%; */
+    height: auto;
   }
 
   .right-col-item {
@@ -133,6 +132,6 @@
   }
   .left-col {
     min-width: 300px;
-    margin: 5px;
+    margin: calc(5px + 40px) 5px 5px 5px;
   }
 }

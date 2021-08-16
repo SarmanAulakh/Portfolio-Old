@@ -7,7 +7,7 @@ export default class FilterBar extends Component {
   constructor() {
     super();
     this.state = {
-      filters: [],
+      filters: []
     };
 
     this.dropdownAccordion = []; //array to hold dropdown refs
@@ -15,7 +15,25 @@ export default class FilterBar extends Component {
   }
 
   componentDidMount() {
-    this.setState({ filters: this.props.filters });
+    this.setState({
+      filters: [
+        { id: "Search", type: "text", value: "", placeholder: "Search" },
+        {
+          id: "Category",
+          type: "dropdown",
+          dropdown: this.props.categories,
+          value: "",
+          placeholder: "Category",
+        },
+        {
+          id: "Sort",
+          type: "dropdown",
+          dropdown: ["Ascending A-Z", "Descending Z-A", "New", "Old"],
+          value: "",
+          placeholder: "Sort By",
+        },
+      ]
+    });
   }
 
   updateFilters = async (id, value, e) => {
@@ -34,13 +52,30 @@ export default class FilterBar extends Component {
     this.dropdownAccordion.map(dropdown => dropdown.resetValue())
 
     //clear all filters and update data
-    await this.setState({ filters: this.props.filters });
+    await this.setState({
+      filters: [
+        { id: "Search", type: "text", value: "", placeholder: "Search" },
+        {
+          id: "Category",
+          type: "dropdown",
+          dropdown: this.props.categories,
+          value: "",
+          placeholder: "Category",
+        },
+        {
+          id: "Sort",
+          type: "dropdown",
+          dropdown: ["Ascending A-Z", "Descending Z-A", "New", "Old"],
+          value: "",
+          placeholder: "Sort By",
+        },
+      ]
+    });
+
     this.props.updateData(this.state.filters);
   };
 
   render() {
-    console.log("props", this.props.filters)
-    console.log("state", this.state.filters)
     return (
       <div className="filter-bar">
         {this.state.filters.map((filter, index) => {
@@ -73,8 +108,8 @@ export default class FilterBar extends Component {
         <Button
           text="CLEAR ALL"
           onClick={() => this.clearFilters()}
-          wrapStyle={{width: 'max-content'}}
-          style={{borderRadius: 5}}
+          wrapStyle={{ width: 'max-content' }}
+          style={{ borderRadius: 5 }}
         />
       </div>
     );
