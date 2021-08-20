@@ -32,3 +32,11 @@
   color: var(--light-blue);
   font-weight: bold;
 }
+
+@media (max-width: 980px) {
+  .navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+}
