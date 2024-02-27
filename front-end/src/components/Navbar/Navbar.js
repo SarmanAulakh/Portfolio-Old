@@ -13,9 +13,9 @@ export default function Navbar({click}) {
         <Link to="/about">
           <p onClick={() => click({ sidePage: 'about' })}>About</p>
         </Link>
-        <Link to="/contact">
+        {/* <Link to="/contact">
           <p onClick={() => click({ sidePage: 'contact' })}>Contact</p>
-        </Link>
+        </Link> */}
       </div>
     </div>
   )

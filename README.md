@@ -1,6 +1,10 @@
 # Portfolio
 
+## Deployment
 
+1. firebase login
+2. cd frontend && npm run build
+3. firebase deploy --project portfolio-c0519 --only hosting 
 
 ## Getting started
 
